@@ -103,7 +103,7 @@ function App() {
     if (!address) return;
 
     const config = {
-      apiKey: 'mNl4fMbazoNQnik6RpstoGKn7KYs8BXo',
+      apiKey: '',
       network: Network.ETH_MAINNET,
     };
     const alchemy = new Alchemy(config);
@@ -155,7 +155,7 @@ function App() {
 
     try {
       const pubKey = new PublicKey(address);
-      const connection = new Connection('https://rpc.helius.xyz/?api-key=9a626bd8-d879-4e12-b92a-4d355a9d3482');
+      const connection = new Connection('');
 
       const { value } = await connection.getParsedTokenAccountsByOwner(pubKey, {
         programId: new PublicKey('TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'),
